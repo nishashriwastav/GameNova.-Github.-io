@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GAME NOVA</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 15px;
+      background: #111827;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .tagline {
+      color: #cbd5e1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 25px 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 18px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    #message {
+      margin-top: 25px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎮 GAME NOVA</h1>
+    <p class="tagline">Play • Learn • Challenge • Have Fun</p>
+  </header>
+
+  <main class="container">
+
+    <h2>Welcome to GAME NOVA! 🚀</h2>
+
+    <p>Your new place for games, quizzes and knowledge.</p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h2>🎮 Games</h2>
+        <p>Play fun games and challenge yourself.</p>
+        <button onclick="showMessage('Games are coming soon! 🎮')">
+          Play
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>🧠 Quizzes</h2>
+        <p>Test your knowledge.</p>
+        <button onclick="showMessage('Quiz section coming soon! 🧠')">
+          Start Quiz
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>📚 Knowledge</h2>
+        <p>Learn interesting things.</p>
+        <button onclick="showMessage('Knowledge section coming soon! 📚')">
+          Learn
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>🏆 Scores</h2>
+        <p>Keep track of your best scores.</p>
+        <button onclick="showMessage('Leaderboard coming soon! 🏆')">
+          Scores
+        </button>
+      </div>
+
+    </div>
+
+    <div id="message"></div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 GAME NOVA</p>
+  </footer>
+
+  <script>
+    function showMessage(message) {
+      document.getElementById("message").textContent = message;
+    }
+  </script>
+
+</body>
+</html>
